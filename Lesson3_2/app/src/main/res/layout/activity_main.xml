@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/img"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:text="Hambugar" />
+
+    <EditText
+        android:id="@+id/addFood"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textFood"
+        android:layout_centerHorizontal="true"
+        android:hint="add new food" />
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/addFood"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="ADD FOOD"/>
+    <Button
+        android:id="@+id/btnDecide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="DECIDE!"/>
+
+</RelativeLayout>
