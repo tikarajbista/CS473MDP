@@ -46,6 +46,7 @@
         android:layout_below="@id/addFood"
         android:layout_gravity="center"
         android:layout_marginBottom="100dp"
+        android:onClick="addFood"
         android:text="ADD FOOD"/>
     <Button
         android:id="@+id/btnDecide"
