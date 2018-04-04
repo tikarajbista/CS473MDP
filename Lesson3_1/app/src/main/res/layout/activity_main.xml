@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Input(LBs)" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Output(KGs)" />
+
+    <EditText
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="CONVERT"
+        android:onClick="convertWeight" />
+
+</LinearLayout>
