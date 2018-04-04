@@ -27,7 +27,7 @@
         android:layout_below="@id/img"
         android:layout_gravity="center"
         android:textSize="24dp"
-        android:text="Hambugar" />
+        android:text="" />
 
     <EditText
         android:id="@+id/addFood"
@@ -41,7 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentLeft="true"
         android:layout_below="@id/addFood"
@@ -55,6 +54,7 @@
         android:layout_alignParentBottom="true"
         android:layout_weight="1"
         android:layout_gravity="center"
+        android:onClick="decideFood"
         android:text="DECIDE!"/>
 
 </RelativeLayout>
