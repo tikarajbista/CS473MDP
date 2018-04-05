@@ -1,4 +1,4 @@
-package com.example.a986034.w1l4;
+package com.example.tikarajbista.w1l4;
 
 public class User {
     private String userName;
@@ -7,4 +7,12 @@ public class User {
         this.userName = name;
         this.password = pass;
     }
+
+    public String getUserName(){
+        return userName;
+    }
+    public String getPassword(){
+        return  password;
+    }
+
 }

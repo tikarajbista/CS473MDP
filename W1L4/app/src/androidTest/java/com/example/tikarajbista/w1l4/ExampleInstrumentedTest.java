@@ -1,4 +1,4 @@
-package com.example.a986034.w1l4;
+package com.example.tikarajbista.w1l4;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.a986034.w1l4", appContext.getPackageName());
+        assertEquals("com.example.tikarajbista.w1l4", appContext.getPackageName());
     }
 }
