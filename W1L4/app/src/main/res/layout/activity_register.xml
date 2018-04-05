@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -17,18 +18,37 @@
         android:textAlignment="center"
         android:text="SignUp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:text="First Name*" />
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:textSize="24sp"
-            android:text="Email" />
+            android:text="Last Name*" />
+
+        <EditText
+            android:id="@+id/lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:text="Email Address*" />
 
         <EditText
             android:id="@+id/email"
@@ -41,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:textSize="24sp"
-            android:text="Password" />
+            android:text="Password*" />
 
         <EditText
             android:id="@+id/password"
@@ -52,11 +72,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="50dp"
             android:background="#2962FF"
-            android:onClick="clickSignUp"
-            android:text="Sign Up" />
-
-    </LinearLayout>
-
+            android:text="Create Account"
+            android:onClick="clickSignUp"/>
 </LinearLayout>

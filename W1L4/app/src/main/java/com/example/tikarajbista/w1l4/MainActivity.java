@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList user = new ArrayList<User>();
+    private static ArrayList user = new ArrayList<User>();
     private EditText emailText, passwordText;
 
     @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Method to add new user into ArrayLIst (user)
-    public void addUser(User usr){
-        this.user.add(usr);
+    public static void addUser(User usr){
+        user.add(usr);
     }
 }
