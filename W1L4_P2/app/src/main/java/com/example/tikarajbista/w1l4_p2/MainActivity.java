@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_STREAM, sms);
+        intent.putExtra(Intent.EXTRA_TEXT, sms);
 
         if(intent.resolveActivity(getPackageManager()) != null){
             startActivity(intent);

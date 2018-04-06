@@ -10,14 +10,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    private static ArrayList user = new ArrayList<User>();
     private EditText emailText, passwordText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        user.addAll(Arrays.asList(new User("rajbista@gmail.com", "rajan"), new User("tbista@mum.edu", "tbista"), new User("tbista", "tbista")));
+        addUser();
 
         emailText = (EditText) findViewById(R.id.email);
         passwordText = (EditText) findViewById(R.id.password);
@@ -29,10 +28,9 @@ public class MainActivity extends AppCompatActivity {
         String password = passwordText.getText().toString().trim();
 
         Intent intent = new Intent(this, ShoppingCategory.class);
-       /* intent.putExtra("user", this.email);
-        startActivity(intent);*/
-            for(int i=0; i<user.size(); i++){
-                User usr = (User) user.get(i);
+
+        for(int i=0; i<UserData.getUser().size(); i++){
+                User usr = (User) UserData.getUser().get(i);
                 if(usr.getUserName().equals(email) && usr.getPassword().equals(password)){
                     intent.putExtra("user", email);
                     startActivity(intent);
@@ -48,11 +46,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegisterActivity.class);
         intent.putExtra("email", email);
         intent.putExtra("password", password);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
+    }
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(requestCode == 1 ){
+            if(resultCode == RESULT_OK){
+
+            }
+        }
     }
 
     // Method to add new user into ArrayLIst (user)
-    public static void addUser(User usr){
-        user.add(usr);
+    public static void addUser(){
+        UserData.getUserData().user.addAll(Arrays.asList(new User("rajbista@gmail.com", "rajan"), new User("tbista@mum.edu", "tbista"), new User("tbista", "tbista")));
     }
 }

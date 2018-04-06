@@ -22,8 +22,10 @@ public class RegisterActivity extends AppCompatActivity {
     public void clickSignUp(View view){
         String email = intent.getStringExtra("email");
         String password = intent.getStringExtra("password");
+        UserData.getUserData().user.add(new User("email", "password"));
+       // UserData.getUserData()..add(new User("email", "password"));
 
-        MainActivity.addUser(new User("email", "password"));
+        finish();
 
         // Display the Toast Message
         Context context = getApplicationContext(); // or you can pass directly this keyword.
@@ -31,10 +33,5 @@ public class RegisterActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-
-        //startActivityForResult(Intent intent, );
-
-        /*Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);*/
     }
 }
