@@ -2,6 +2,7 @@ package com.example.tikarajbista.w1l4_p2;
 
 import android.app.SearchManager;
 import android.content.Intent;
+import android.net.MailTo;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
@@ -22,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
         sms = (EditText) findViewById(R.id.sms);
     }
 
-    // Method to send message
+    // Method to send Mail
     public void sendMessage(View view){
         String body = messageBody.getText().toString();
-
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, body);
 
@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
         String sms = search.getText().toString();
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.putExtra("sms_body", sms);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_STREAM, sms);
 
         if(intent.resolveActivity(getPackageManager()) != null){
             startActivity(intent);
