@@ -40,20 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Method to Register user with email and password
     public void methodRegister(View view){
-        String email = emailText.getText().toString().trim();
-        String password = passwordText.getText().toString().trim();
-
         Intent intent = new Intent(this, RegisterActivity.class);
-        intent.putExtra("email", email);
-        intent.putExtra("password", password);
         startActivityForResult(intent, 1);
-    }
-    public void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode == 1 ){
-            if(resultCode == RESULT_OK){
-
-            }
-        }
     }
 
     // Method to add new user into ArrayLIst (user)
