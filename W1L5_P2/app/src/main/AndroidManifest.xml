@@ -21,7 +21,9 @@
         <activity android:name=".BeautyActivity" />
         <activity android:name=".ClothingActivity" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".FoodDetail"></activity>
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".ElectronicsActivity" />
+        <activity android:name=".ElectronicDetail"></activity>
     </application>
 
 </manifest>

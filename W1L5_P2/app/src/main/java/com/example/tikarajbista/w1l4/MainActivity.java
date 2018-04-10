@@ -1,12 +1,13 @@
 package com.example.tikarajbista.w1l4;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         emailText = (EditText) findViewById(R.id.email);
         passwordText = (EditText) findViewById(R.id.password);
+
     }
 
     // Method to validate the user in ArrayList (user)
@@ -48,4 +50,8 @@ public class MainActivity extends AppCompatActivity {
     public static void addUser(){
         UserData.getUserData().user.addAll(Arrays.asList(new User("rajbista@gmail.com", "rajan"), new User("tbista@mum.edu", "tbista"), new User("tbista", "tbista")));
     }
+
+
+
+
 }
