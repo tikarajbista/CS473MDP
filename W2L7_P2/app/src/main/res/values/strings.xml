@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">W1L4</string>
+    <string-array name="beauty">
+        <item>Makeup</item>
+        <item>Skin Care</item>
+        <item>Hair Care</item>
+        <item>Perfume and Cologne</item>
+        <item>Personal and Oral Care</item>
+    </string-array>
+    <string-array name="clothing">
+        <item>Shirts</item>
+        <item>Sweaters</item>
+        <item>Jeans</item>
+        <item>Pants</item>
+        <item>Shorts</item>
+        <item>Socks</item>
+        <item>Shoes</item>
+        <item>Watches</item>
+    </string-array>
+    <string-array name="foods">
+        <item>BreakFast</item>
+        <item>Baking</item>
+        <item>Snacks</item>
+        <item>Beverage</item>
+        <item>Chocolate</item>
+        <item>Dairy</item>
+    </string-array>
+</resources>
