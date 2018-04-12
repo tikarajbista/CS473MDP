@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MovieAdaptar extends BaseAdapter {
+public class PersonalAdaptar extends BaseAdapter {
     @Override
     public int getCount() {
-        return Movie.movie.size();
+        return Personal.personals.size();
     }
 
     @Override
@@ -26,25 +26,26 @@ public class MovieAdaptar extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = LayoutInflater.from(MovieList.movieList);
 
-        View view = inflater.inflate(R.layout.movie_view, null);
+        LayoutInflater inflater = LayoutInflater.from(PersonalActivity.personalActivity);
+
+        View view = inflater.inflate(R.layout.personal_view, null);
 
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
-        Button go = (Button) view.findViewById(R.id.btn);
         TextView textView = (TextView) view.findViewById(R.id.text);
+        Button button = (Button) view.findViewById(R.id.btn);
 
-        Movie movie =(Movie) Movie.movie.get(position);
+        Personal personal =(Personal) Personal.personals.get(position);
+        textView.setText(personal.getName());
+        imageView.setImageResource(personal.getId());
 
-        textView.setText(movie.getName());
-        imageView.setImageResource(movie.getId());
-
-        go.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MovieList.movieList.go(position);
+                PersonalActivity.personalActivity.go(position);
             }
         });
+
         return view;
     }
 }

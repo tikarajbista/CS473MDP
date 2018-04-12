@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">W2L7_P1</string>
+    <string name="title_activity_personal">PersonalActivity</string>
 </resources>
