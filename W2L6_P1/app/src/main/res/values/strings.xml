@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MY RESUME</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="myself">Skilled web and android application developer with 4 years of experience in a hands-on development environment focused on both internal and external client software projects. Strong contributor to the software development lifecycle, with involvement in requirements, design, programming, testing, and implementation.</string>
+    <string name="core">Software Engineering • Web Application Development • Android Application Development • Requirements Gathering and Analysis • Application Modeling • Business Logic Development • Software Testing and Debugging</string>
+
+    <string name="master">Master of Science in Computer Science (Running)</string>
+    <string name="master_address">Maharishi University of Management, Fairfield, Iowa</string>
+    <string name="bachelor">Bachelor of Computer Science and Engineering (2016)</string>
+    <string name="bachelor_address">HMS Institute of Technology, Bangalore, Karnataka, India</string>
+    <string name="diploma">Diploma in Computer Engineering (2012)</string>
+    <string name="diploma_address">Nepal Softech College of Computer Engineering, Nepal</string>
+
+    <string name="role">Full Stack Developer</string>
+    <string name="company1">KANTIPUR IT INK, Kathmandu, Nepal • 2011-2013</string>
+    <string name="company1_des">One of Nepal’s top innovators in information technology, focused on technology for the travel industry.</string>
+    <string name="role_des">Contributed to the software development lifecycle in an Agile environment for web applications development.</string>
+
+    <string name="company2">Yarsa Labs, Pokhara, Nepal • 2016-2017 </string>
+    <string name="company2_des">One of Nepal’s largest software development companies.</string>
+
+    <string name="technologies">C#, JavaScript, Node.js, Express.js, ASP.NET MVC 5, Angular, jQuery, Bootstrap, HTML5, CSS 3, JSON, AJAX, SQL Server 2014, MySQL, NoSQL, MongoDB, Microsoft Visual Studio 2015, Microsoft SQL Server, GitHub, Microsoft Windows</string>
+</resources>
