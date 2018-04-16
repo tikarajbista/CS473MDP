@@ -34,8 +34,10 @@ public class ShopAdaptar extends BaseAdapter {
 
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
         Button go = (Button) view.findViewById(R.id.btn);
-        Shopping shop =(Shopping) Shopping.shopping.get(position);
+        TextView textView = (TextView) view.findViewById(R.id.text);
 
+        Shopping shop =(Shopping) Shopping.shopping.get(position);
+        textView.setText(shop.getName());
         imageView.setImageResource(shop.getId());
 
        go.setOnClickListener(new View.OnClickListener() {

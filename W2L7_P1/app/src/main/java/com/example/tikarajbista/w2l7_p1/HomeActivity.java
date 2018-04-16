@@ -19,6 +19,9 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+
+
                 if(tab.getPosition() == 1){
                     Intent intent = new Intent(getApplicationContext(), MovieList.class);
                     startActivity(intent);
@@ -36,7 +39,10 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
-
+                if(tab.getPosition() == 0){
+                    Intent intent = new Intent(getApplicationContext(), PersonalActivity.class);
+                    startActivity(intent);
+                }
             }
         };
         aBar.addTab(aBar.newTab().setText("Personal Site").setTabListener(tabListener));

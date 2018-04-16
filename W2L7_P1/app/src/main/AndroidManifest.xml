@@ -21,8 +21,14 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".ShoppoingList" />
-        <activity android:name=".ViewWeb" />
-        <activity android:name=".MovieList"></activity>
+        <activity android:name=".ShoppingView" />
+        <activity android:name=".MovieList" />
+        <activity
+            android:name=".PersonalActivity"
+            android:label="@string/title_activity_personal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PersonalView" />
+        <activity android:name=".MovieView"></activity>
     </application>
 
 </manifest>

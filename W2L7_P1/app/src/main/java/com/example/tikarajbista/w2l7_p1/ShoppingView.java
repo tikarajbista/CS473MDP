@@ -6,7 +6,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class ViewWeb extends AppCompatActivity {
+public class ShoppingView extends AppCompatActivity {
     public static final String shopId = "shopId";
 
     @Override
@@ -20,9 +20,9 @@ public class ViewWeb extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setBuiltInZoomControls(true);
 
-      int i = (Integer) getIntent().getExtras().get(shopId);
-      Shopping shop =(Shopping) Shopping.shopping.get(i);
-      String url = shop.getUrl();
+        int i = (Integer) getIntent().getExtras().get(shopId);
+        Shopping shop =(Shopping) Shopping.shopping.get(i);
+        String url = shop.getUrl();
         webView.loadUrl(url);
     }
 }
